@@ -31,6 +31,7 @@ blockquote {
     font-style: italic;
 }
 
+
 ul {
     font-size: .9em;
     line-height: 24px;
@@ -49,4 +50,8 @@ ul {
     margin-left: auto;
     margin-right: auto;
     width: 70%;
+}
+
+.quoting {
+    text-align: right;
 }
