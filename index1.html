@@ -10,6 +10,8 @@
     <link rel="stylesheet" type="text/css" href="./css/main.css">
     <link rel="stylesheet" type="text/css" href="./css/index1.css">
     <title>Best Dividend Stocks</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+
 </head>
 <body>
 
@@ -18,7 +20,7 @@
     </div>
 
     <div class="row">
-        <div class="col-3 col-s-3 menu">
+        <div class="col-4 col-s-4 menu">
             <ul>
                 <li><a href="index.html">Wealth Creation</a></li>
                 <li><a href="index1.html">Investing</a></li>
@@ -26,7 +28,7 @@
             </ul>
         </div>
 
-        <div class="col-9 col-s-9">
+        <div class="col-8 col-s-8">
             <h1>In A Weakening Economy Undervalued Quality Dividend Stocks Are The Best Place To Put New Money To Work</h1>
             <p><span class="dropcase">W</span>ith economic fundamentals now weakening significantly and pointing to just 1.5% GDP growth in the first half of 2019 (half 2018's growth rate) valuation becomes more important than ever for putting new money to work.</p>
             <p>
@@ -39,7 +41,28 @@
                 To paraphrase a famous Latin quote (Fortuna Eruditis Favet "fortune favors the prepared mind")
             </p>
             <blockquote>"Fortune favors the prepared investor, and so disciplined investors prepared with quality watchlists and high savings will eventually make a fortune."</blockquote>
-            
+            <canvas id="myChart"></canvas>
+            <script>
+                var ctx = document.getElementById('myChart').getContext('2d');
+                var chart = new Chart(ctx, {
+                    // The type of chart we want to create
+                    type: 'line',
+
+                    // The data for our dataset
+                    data: {
+                        labels: ["January", "February", "March", "April", "May", "June", "July"],
+                        datasets: [{
+                            label: "My First dataset",
+                            backgroundColor: 'rgb(255, 99, 132)',
+                            borderColor: 'rgb(255, 99, 132)',
+                            data: [0, 10, 5, 2, 20, 30, 45],
+                        }]
+                    },
+
+                    // Configuration options go here
+                    options: {}
+                });
+            </script>
         </div>
     </div>
     <!--Section 1-->
