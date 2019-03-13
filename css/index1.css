@@ -64,3 +64,15 @@ ul {
     line-height: 60px;
     padding: 4px 8px 0px 3px;
 }
+
+.cards {
+    background-color: #A1BDCA;
+    padding: 24px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.colpad {
+    padding: 0px 4px 24px 24px;
+}
