@@ -7,6 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Roboto" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="./css/main.css">
     <link rel="stylesheet" type="text/css" href="./css/index1.css">
     <title>Best Dividend Stocks</title>
@@ -20,7 +21,7 @@
     </div>
 
     <div class="row">
-        <div class="col-4 col-s-4 menu">
+        <div class="col-3 col-s-3 menu">
             <ul>
                 <li><a href="index.html">Wealth Creation</a></li>
                 <li><a href="index1.html">Investing</a></li>
@@ -28,7 +29,7 @@
             </ul>
         </div>
 
-        <div class="col-8 col-s-8">
+        <div class="col-9 col-s-9">
             <h1>In A Weakening Economy Undervalued Quality Dividend Stocks Are The Best Place To Put New Money To Work</h1>
             <p><span class="dropcase">W</span>ith economic fundamentals now weakening significantly and pointing to just 1.5% GDP growth in the first half of 2019 (half 2018's growth rate) valuation becomes more important than ever for putting new money to work.</p>
             <p>
@@ -41,33 +42,71 @@
                 To paraphrase a famous Latin quote (Fortuna Eruditis Favet "fortune favors the prepared mind")
             </p>
             <blockquote>"Fortune favors the prepared investor, and so disciplined investors prepared with quality watchlists and high savings will eventually make a fortune."</blockquote>
-            <canvas id="myChart"></canvas>
+            <canvas id="top5_HY_BC"></canvas>
             <script>
-                var ctx = document.getElementById('myChart').getContext('2d');
+                var ctx = document.getElementById('top5_HY_BC').getContext('2d');
                 var chart = new Chart(ctx, {
                     // The type of chart we want to create
-                    type: 'line',
+                    type: 'bar',
 
                     // The data for our dataset
                     data: {
-                        labels: ["January", "February", "March", "April", "May", "June", "July"],
+                        labels: ["Yield",
+                            "Fair Value Yield",
+                            "Historical Yield High",
+                            "Discount to Fair Value",
+                            "Expected 5 Year Annualized Cash Flow Growth",
+                            "Valuation Adujusted Total Return Potential"],
                         datasets: [{
-                            label: "My First dataset",
+                            label: "SKT",
                             backgroundColor: 'rgb(255, 99, 132)',
                             borderColor: 'rgb(255, 99, 132)',
-                            data: [0, 10, 5, 2, 20, 30, 45],
+                            data: [6.9, 3.5, 6.8, 48, 4.8, 17.8],
+                        }, {
+                            label: "ENB",
+                            backgroundColor: 'rgb(255, 175, 192)',
+                            borderColor: 'rgb(255, 175, 192)',
+                            data: [6.2, 3.8, 6.6, 39, 6, 19.1],
+                        }, {
+                            label: "KIM",
+                            backgroundColor: 'rgb(127, 88, 96)',
+                            borderColor: 'rgb(127, 88, 96)',
+                            data: [6.5, 4.1, 24.5, 36, 3.6, 15.7],
+                        }, {
+                            label: "MO",
+                            backgroundColor: 'rgb(204, 79, 106)',
+                            borderColor: 'rgb(204, 79, 106)',
+                            data: [5.8, 4.0, 14.4, 30, 8, 17.1],
+                        }, {
+                            label: "MMP",
+                            backgroundColor: 'rgb(127, 88, 96)',
+                            borderColor: 'rgb(127, 88, 96)',
+                            data: [6.7, 5.0, 12.0, 30, 6.5, 16.9],
                         }]
                     },
 
                     // Configuration options go here
-                    options: {}
+                    options: {
+                        title: {
+                            display: true,
+                            text: 'Top 5 High-Yield Blue-Chips To Buy Today',
+                            fontSize: 16,
+                            fontFamily: "'Roboto', 'Arial'"
+                        },
+                        legend: {
+                            display: true
+                        },
+                        scales: {
+                            yAxes: [{
+                                scaleLabel: {
+                                    display: true,
+                                    labelString: 'Percentage, ( % )'
+                                }
+                            }]
+                        }
+                    }
                 });
             </script>
-        </div>
-    </div>
-    <!--Section 1-->
-    <div class="row">
-        <div class="col-4 col-s-4 colpad">
             <div class="cards">
                 <h2>The Best Dividend Growth Stocks You Can Buy Today</h2>
                 <p>
@@ -87,40 +126,43 @@
                 <p>The historical margin of error for this valuation-adjusted model is about 20% (the most accurate I've yet discovered).</p>
 
             </div>
-        </div>
-        <div class="col-4 col-s-4 colpad">
-            <div class="cards">
-                <h2>Discounted Cash Flow</h2>
-                <p>
-                    Fundamentally, any company is worth the present value of all its future cash flow. That's as basic a valuation method as you can get. However, in reality, the future is uncertain, and the discount rate you use, as well your growth assumptions, can make a DCF model say pretty much anything you want.
-                </p>
-                <p>This is why I consider Morningstar's 100% long-term, fundamentals-driven and conservative analysts to be a great source of DCF estimated fair values.</p>
-                <p>Those analysts generally assume slower growth than the analyst consensus and even sometimes management itself. As a result, Morningstar four and five star rated companies can be thought of as "strong buy" or "very strong buy" recommendations, respectively, from analysts whom I consider among the best in the business.</p>
-                <p>Above you can see the top-rated companies that my Deep Value Dividend Growth portfolio owns. Every company presented here is one that my own long-term, valuation-adjusted total return model (based on the one Brookfield Asset Management has been using for decades) expects to generate at least 13% long-term total returns (margin of error 20%).</p>
-                <p>Note that only the companies with "5-star prices" are ones that Morningstar has done a deep dive on. The "Q" rated companies are merely compared to their peer groups, and thus, not necessarily as reliable.</p>
-                <p>But DCF is far from the only valuation method you should consider.</p>
+            <div class="col-6 col-s-6 colpad">
+                
+                    <h2>Discounted Cash Flow</h2>
+                    <p>
+                        Fundamentally, any company is worth the present value of all its future cash flow. That's as basic a valuation method as you can get. However, in reality, the future is uncertain, and the discount rate you use, as well your growth assumptions, can make a DCF model say pretty much anything you want.
+                    </p>
+                    <p>This is why I consider Morningstar's 100% long-term, fundamentals-driven and conservative analysts to be a great source of DCF estimated fair values.</p>
+                    <p>Those analysts generally assume slower growth than the analyst consensus and even sometimes management itself. As a result, Morningstar four and five star rated companies can be thought of as "strong buy" or "very strong buy" recommendations, respectively, from analysts whom I consider among the best in the business.</p>
+                    <p>Above you can see the top-rated companies that my Deep Value Dividend Growth portfolio owns. Every company presented here is one that my own long-term, valuation-adjusted total return model (based on the one Brookfield Asset Management has been using for decades) expects to generate at least 13% long-term total returns (margin of error 20%).</p>
+                    <p>Note that only the companies with "5-star prices" are ones that Morningstar has done a deep dive on. The "Q" rated companies are merely compared to their peer groups, and thus, not necessarily as reliable.</p>
+                    <p>But DCF is far from the only valuation method you should consider.</p>
+                
             </div>
-        </div>
-        <div class="col-4 col-s-4 colpad">
-            <div class="cards">
-                <h2>Price-To-Earnings</h2>
-                <p>
-                    Remember that Yale valuation study that looked at stocks based on P/E ratio? Well, the venerable P/E ratio is one of the most popular valuation approaches, and for good reason. While no valuation method is perfect, a good rule of thumb (from Chuck Carnevale, the SA king of value investing and founder of F.A.S.T Graphs) is to never pay more than 15 times forward earnings for a company.
-                </p>
-                <p>Chuck usually compares companies to their historical P/E ratios, and he's ranked in the top 1.4% of all analysts tracked by TipRanks (based on the forward 12-month total returns of his recommendations). While 12 months is hardly "long term," the point is that Mr. Carnevale is a fantastic value investing analyst, and so, his rule of thumb is well worth keeping in mind.</p>
-                <p>
-                    Here's DVDGP's portfolio holdings that have forward PEs of 15 or less.
-                </p>
-                <p>Note that stewardship rating is Morningstar's estimate of the quality of the management team. P = poor (DVDGP's policy is to avoid all such companies), S = standard (average to good), and E = exemplary (very good to excellent).</p>
-                <p>But while both DCF and forward P/E are great methods to value a company, personally my absolute favorite, and what I use to invest my own money and make most of my recommendations, is Dividend Yield Theory, or DYT. This is how I create my five watchlists, which I intend to use to invest all my savings for the rest of my life.</p>
+            <div class="col-6 col-s-6 colpad">
+                
+                    <h2>Price-To-Earnings</h2>
+                    <p>
+                        Remember that Yale valuation study that looked at stocks based on P/E ratio? Well, the venerable P/E ratio is one of the most popular valuation approaches, and for good reason. While no valuation method is perfect, a good rule of thumb (from Chuck Carnevale, the SA king of value investing and founder of F.A.S.T Graphs) is to never pay more than 15 times forward earnings for a company.
+                    </p>
+                    <p>Chuck usually compares companies to their historical P/E ratios, and he's ranked in the top 1.4% of all analysts tracked by TipRanks (based on the forward 12-month total returns of his recommendations). While 12 months is hardly "long term," the point is that Mr. Carnevale is a fantastic value investing analyst, and so, his rule of thumb is well worth keeping in mind.</p>
+                    <p>
+                        Here's DVDGP's portfolio holdings that have forward PEs of 15 or less.
+                    </p>
+                    <p>Note that stewardship rating is Morningstar's estimate of the quality of the management team. P = poor (DVDGP's policy is to avoid all such companies), S = standard (average to good), and E = exemplary (very good to excellent).</p>
+                    <p>But while both DCF and forward P/E are great methods to value a company, personally my absolute favorite, and what I use to invest my own money and make most of my recommendations, is Dividend Yield Theory, or DYT. This is how I create my five watchlists, which I intend to use to invest all my savings for the rest of my life.</p>
+                
             </div>
         </div>
     </div>
+
 
     <div class="footer">
         <blockquote>"If you aren't willing to own a stock for ten years, don't even think about owning it for ten minutes. Put together a portfolio of companies whose aggregate earnings march upward over the years, and so also will the portfolio's market value."</blockquote>
         <blockquote class="quoting">-- Warren Buffet</blockquote>
     </div>
 
+
 </body>
 </html>
+
