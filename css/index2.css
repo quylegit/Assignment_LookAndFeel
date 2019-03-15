@@ -1,57 +1,104 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display|Roboto');
 
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
+body{
+	font-family: 'Roboto', sans-serif;
+	margin : 0;
+	padding : 10px;
+	background-color: white;
 }
-
 h1 {
-    font-family: 'Playfair Display', serif;
-    font-weight: 400;
-    font-style: normal;
+    	font-family: 'Playfair Display', serif;
+	text-transform: uppercase;
+    	font-weight: 400;
+    	font-style: normal;
+	display:block;
+	text-shadow:
+		1px 1px 0px #FFF,
+		2px 2px 0px #999,
+		3px 3px 0px #FFF;
+	background-size:4px 4px;
 }
 
 h2 {
-    font-family: 'Playfair Display', serif;
-    font-weight: 400;
-    font-size: xx-large;
-    font-style: normal;
+    	font-family: 'Playfair Display', serif;
+	text-transform: uppercase;
+    	font-weight: 400;
+    	font-size: xx-large;
+    	font-style: normal;
+	display:block;
 }
 
 p {
-    line-height: 24px;
-    margin: 24px 0;
+    	line-height: 24px;
+    	margin: 24px 0;
+	text-align : justify;
 }
-
-blockquote {
-    font-family: 'Playfair Display', serif;
-    font-weight: 400;
-    font-size: large;
-    font-style: italic;
-}
-
 
 ul {
-    font-size: .9em;
-    line-height: 24px;
+    	font-size: .9em;
+    	line-height: 24px;
 }
 
-.header2 {
-    background-color: #31BF94;
-    color: #ffffff;
-    padding: 24px;
-    font-size: 36px;
-    text-align: center;
+.header{
+  	padding: 30px;
+  	font-size: 30px;
+  	text-align: center;
+  	background-color: #000099;
+	color: #ffffff;
+	border-width : 4px 2px 0 4px;
 }
 
-.imgcenter {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
-}
 
-.quoting {
-    text-align: right;
+.row li {
+	display: flex;
+    	flex-wrap: wrap;
+    	padding: 0 4px;
+ 	background-color: #000099;
+	border-width : 4px 2px 0 4px;
 }
+  
+  /* Create four equal columns that sits next to each other */
+ .column {
+    	flex: 25%;
+    	max-width: 25%;
+    	padding: 0 4px;
+  }
+  
+ .column img {
+    	margin-top: 8px;
+    	vertical-align: middle;
+  }
+.image {
+    	display: block;
+    	margin-left: auto;
+    	margin-right: auto;
+    	width: 60%;
+}
+. content {
+    	text-align: left;
+	backgroud-color : white;
+	
+}
+.footer {
+  	padding: 10px;
+  	text-align: center;
+  	margin-top: 0px;
+	background-color: #000099;
+	color: #ffffff;
+}
+ 
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
