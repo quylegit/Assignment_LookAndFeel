@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Roboto');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -13,37 +21,30 @@
     padding: 15px;
 }
 
-html {
-    font-family: "Lucida Sans", sans-serif;
-}
-
 .header {
     background-color: #9933cc;
     color: #ffffff;
     padding: 15px;
 }
 
-.menu ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
+    .menu ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
 
-.menu li {
-    padding: 8px;
-    margin-bottom: 7px;
-    background-color: #3C667A;
-    color: #ffffff;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    -moz-border-radius: 24px;
-    -webkit-border-radius: 24px;
-    border-radius: 24px;
-}
+    .menu li {
+        padding: 8px;
+        /*margin-bottom: 7px;*/
+        background-color: #3C667A;
+        color: #ffffff;
+    }
 
     .menu li a {
         color: #FFFFFF;
         text-decoration: none;
         margin-left: 12px;
+        text-transform: uppercase;
     }
 
     .menu li:hover {
@@ -171,5 +172,6 @@ html {
 
     .col-12 {
         width: 100%;
+
     }
 }
